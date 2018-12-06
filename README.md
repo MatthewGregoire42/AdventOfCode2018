@@ -7,3 +7,4 @@ A file named \<X>.\<i>.py was the ith problem on day X of the coding challenge. 
   
 ## Code Quality
 I am well aware that these solutions are not entirely understandable. I hope to hone my skills making readable code, so at some point I may go back and improve not only the readability, but also the efficiency and clarity of the algorithms used.
+
