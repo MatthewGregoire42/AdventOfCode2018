@@ -70,7 +70,6 @@ def iterate(graph, carts):
             elif direction == "left":
                 c[0][1] -= 1
         elif tile == "/":
-            print("here")
             if direction == "up":
                 c[1] = "right"
                 c[0][1] += 1
@@ -150,15 +149,12 @@ def iterate(graph, carts):
         for c in range(len(carts)):
             for d in range(len(carts)):
                 if carts[c][0] == carts[d][0] and carts[c] != carts[d]:
-                    print("collision! at", str(carts[c][0][1]) + "," + str(carts[c][0][0]))
+                    # print("collision! at", str(carts[c][0][1]) + "," + str(carts[c][0][0]))
                     if carts[c] in output:
                         output.remove(carts[c])
                     if carts[d] in output:
                         output.remove(carts[d])
-    return output
-
-
-                    
+    return output                
 
 def represent(graph, carts):
     output = [a.copy() for a in graph]
